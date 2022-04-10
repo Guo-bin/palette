@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>調色盤</title>
+    </head>
+    <body>
+        <div class="mask"></div>
+
+        <div class="palette-container">
+            <div class="palette palette1">
+                <span></span>
+                <button class="lock" data-lock="false">
+                    <i class="fa-solid fa-lock-open"></i><i class="fa-solid fa-lock"></i>
+                </button>
+                <button class="copy"><i class="fa-solid fa-clone"></i></button>
+                <button class="move">
+                    <i class="fa-solid fa-arrows-left-right"></i> <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+                <label class="colorInput" for="colorInput_1"><i class="fa-solid fa-palette"></i></label>
+                <input type="color" id="colorInput_1" />
+            </div>
+            <div class="palette palette2">
+                <span></span>
+                <button class="lock" data-lock="false">
+                    <i class="fa-solid fa-lock-open"></i><i class="fa-solid fa-lock"></i>
+                </button>
+                <button class="copy"><i class="fa-solid fa-clone"></i></button>
+                <button class="move">
+                    <i class="fa-solid fa-arrows-left-right"></i> <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+                <label class="colorInput" for="colorInput_2"><i class="fa-solid fa-palette"></i></label>
+                <input type="color" id="colorInput_2" />
+            </div>
+            <div class="palette palette3">
+                <span></span>
+                <button class="lock" data-lock="false">
+                    <i class="fa-solid fa-lock-open"></i><i class="fa-solid fa-lock"></i>
+                </button>
+                <button class="copy"><i class="fa-solid fa-clone"></i></button>
+                <button class="move">
+                    <i class="fa-solid fa-arrows-left-right"></i> <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+                <label class="colorInput" for="colorInput_3"><i class="fa-solid fa-palette"></i></label>
+                <input type="color" id="colorInput_3" />
+            </div>
+            <div class="palette palette4">
+                <span></span>
+                <button class="lock" data-lock="false">
+                    <i class="fa-solid fa-lock-open"></i><i class="fa-solid fa-lock"></i>
+                </button>
+                <button class="copy"><i class="fa-solid fa-clone"></i></button>
+                <button class="move">
+                    <i class="fa-solid fa-arrows-left-right"></i> <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+                <label class="colorInput" for="colorInput_4"><i class="fa-solid fa-palette"></i></label>
+                <input type="color" id="colorInput_4" />
+            </div>
+            <div class="palette palette5">
+                <span></span>
+                <button class="lock" data-lock="false">
+                    <i class="fa-solid fa-lock-open"></i><i class="fa-solid fa-lock"></i>
+                </button>
+                <button class="copy"><i class="fa-solid fa-clone"></i></button>
+                <button class="move">
+                    <i class="fa-solid fa-arrows-left-right"></i> <i class="fa-solid fa-arrows-up-down"></i>
+                </button>
+                <label class="colorInput" for="colorInput_5"><i class="fa-solid fa-palette"></i></label>
+                <input type="color" id="colorInput_5" />
+            </div>
+        </div>
+        <div class="button">
+            <button class="changeColor btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+            <button class="back btn"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            <button class="front btn"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button class="saveColor btn"><i class="fa-solid fa-floppy-disk"></i></button>
+            <button class="colorSideMenuButton btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="saveColorWindow">
+            <button class="close">
+                <i class="fa-solid fa-x"></i>
+            </button>
+
+            <div class="collection"></div>
+            <div><button class="save">儲存</button> <button class="cancel">取消</button></div>
+        </div>
+        <div class="colorSideMenu">
+            <button class="colorSideMenuClose"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="sideMenuContainer"></div>
+        </div>
+    </body>
+    <script src="./index.js"></script>
+</html>
